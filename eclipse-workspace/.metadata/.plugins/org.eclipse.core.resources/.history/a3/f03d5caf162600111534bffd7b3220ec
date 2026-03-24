@@ -1,9 +1,0 @@
-package questao3;
-
-public interface Forma {
-	
-	public abstract void calculoPerimetro();
-	
-	public abstract void areaForma();
-	
-}
