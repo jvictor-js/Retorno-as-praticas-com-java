@@ -1,0 +1,24 @@
+package questao2;
+
+public class Pessoa {
+	
+	protected String nome;
+	protected String cpf;
+	
+	Pessoa(){}
+	
+	Pessoa(String nome, String cpf){
+		this.nome = nome;
+		this.cpf = cpf;
+	}
+	
+	Pessoa(String nome){
+		this.nome = nome;
+	}
+	
+	public void mostraDados() {
+		System.out.println("Nome: " + nome);
+		System.out.println("CPF: " + cpf);
+	}
+
+}

@@ -1,0 +1,21 @@
+package questao2;
+
+public class Funcionario extends Pessoa{
+	
+	protected String matricula;
+	protected double salario;
+	
+	Funcionario(){}
+	
+	Funcionario(String nome, String cpf, String matricula, double salario){
+		super(nome, cpf);
+		this.matricula = matricula;
+		this.salario = salario;
+	}
+	
+	@Override
+	public void mostraDados() {
+		
+	}
+	
+}

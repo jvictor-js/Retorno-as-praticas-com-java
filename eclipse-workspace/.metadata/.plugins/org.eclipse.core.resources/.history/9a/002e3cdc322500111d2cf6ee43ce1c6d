@@ -1,0 +1,16 @@
+package aula24;
+import java.util.Scanner;
+
+public class MainCarro {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Carro c1 = new Carro();
+		Carro c2 = new Carro("Fiat", "Ducato", 10, 100, 0.2);
+		
+		c1.criarCarro(sc);
+		
+
+	}
+
+}

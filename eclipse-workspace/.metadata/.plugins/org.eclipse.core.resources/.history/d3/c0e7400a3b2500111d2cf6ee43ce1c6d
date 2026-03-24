@@ -1,0 +1,30 @@
+package maonamassa;
+
+public class ContaBancaria {
+	private double saldo;
+	
+	public double getSaldo() {
+		return saldo;
+	}
+	
+	public void depositar(double valor) {
+		if (valor < saldo || valor == 0) {
+			System.out.println("Valor inválido!");
+		} else {
+			saldo += valor;
+			System.out.println(saldo);
+		}
+	}
+	
+	public void sacar(double valor) {
+		if (valor > saldo ) {
+			System.out.println("Não é possível sacar um valor maior que o saldo");
+		} else if (valor == 0) {
+			System.out.println("Saque inválido!");
+		} else {
+			saldo -= valor;
+			System.out.println(saldo);
+		}
+	}
+	
+}

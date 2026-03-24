@@ -1,0 +1,27 @@
+package questao3;
+
+public class ContaEspecial extends Conta{
+	
+	private double limite;
+	
+	ContaEspecial(){}
+
+	ContaEspecial(String nomeTitular, String tipoConta, double saldo, double limite){
+		super(nomeTitular, tipoConta, saldo);
+		this.limite = limite;
+	}
+	
+	@Override
+	public void sacar(double saque) {
+		if (saldo <= 0) {
+			System.out.println("Impossível sacar! Deposite primeiro.");
+		} else if (saque > (saldo + limite)) {
+			System.out.println("Limite insuficiente");
+		} else {
+			saldo -= saque;
+			System.out.println("Saque de " + saque);
+			System.out.println("Saldo atual: " + saldo);
+		}
+	}
+	
+}

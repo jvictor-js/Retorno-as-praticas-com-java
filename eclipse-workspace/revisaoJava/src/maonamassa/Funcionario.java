@@ -1,0 +1,48 @@
+package maonamassa;
+import java.util.Scanner;
+
+public class Funcionario {
+	private String nome;
+	private double salario;
+	private double porcentagem;
+	
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public double getSalario() {
+		return salario;
+	}
+	public void setSalario(double salario) {
+		this.salario = salario;
+	}
+	
+	public double getPorcentagem() {
+		return porcentagem;
+	}
+	public void setPorcentagem(double porcentagem) {
+		this.porcentagem = porcentagem;
+	}
+	
+	public void aumentarSalario(double porcentagem) {
+		salario += salario * (porcentagem/100);
+	}
+	
+	public void registrandoFuncionario(Scanner sc) {
+		System.out.println("--- Adicionando Funcionário ---");
+		System.out.println("Informe seu nome: ");
+		setNome(sc.nextLine());
+		System.out.println("Informe seu salario: ");
+		setSalario(sc.nextDouble());
+		sc.nextLine();
+	}
+	
+	public void exibindoFuncionario() {
+		System.out.println("--- Exibindo funcionario ---");
+		System.out.println("Nome: " + getNome());
+		System.out.println("Salário: " + getSalario());
+	}
+	
+}

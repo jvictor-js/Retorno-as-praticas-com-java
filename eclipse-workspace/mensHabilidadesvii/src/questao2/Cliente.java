@@ -1,0 +1,26 @@
+package questao2;
+
+public class Cliente extends Pessoa{
+	
+	private int codigo;
+	
+	Cliente(){}
+	
+	Cliente(String nome, String cpf, int codigo){
+		super(nome, cpf);
+		this.codigo = codigo;
+	}
+	
+	@Override
+	public void mostraDados() {
+		super.mostraDados();
+		System.out.println("Código do cliente: " + codigo);
+	}
+	
+	public void mostraDados(String mensagem) {
+		System.out.println("Mensagem: " + mensagem);
+		mostraDados();
+		
+	}
+	
+}

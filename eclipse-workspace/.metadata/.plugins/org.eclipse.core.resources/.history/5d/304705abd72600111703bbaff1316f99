@@ -1,0 +1,11 @@
+package composicao;
+
+public class Casa {
+	
+	private Quarto[] quartos = new Quarto[3];
+	
+	Casa(Quarto[] quartos) {
+		this.quartos = quartos;
+	}
+	
+}

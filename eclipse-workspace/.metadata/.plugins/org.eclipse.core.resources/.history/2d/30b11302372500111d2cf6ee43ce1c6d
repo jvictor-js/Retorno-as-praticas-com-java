@@ -1,0 +1,13 @@
+package maonamassa;
+import java.util.Scanner;
+
+public class MainPessoa {
+
+	public static void main(String[] args) {
+		Pessoa p = new Pessoa();
+		
+		p.criarPessoa(sc);
+
+	}
+
+}

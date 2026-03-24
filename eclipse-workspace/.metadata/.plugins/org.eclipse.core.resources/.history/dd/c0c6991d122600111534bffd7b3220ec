@@ -1,0 +1,14 @@
+package questao2;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Veiculo bicicleta = new Bicicleta();
+		Veiculo automovel = new Automovel();
+		
+		bicicleta
+
+	}
+
+}

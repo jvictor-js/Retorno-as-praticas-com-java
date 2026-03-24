@@ -1,0 +1,28 @@
+package agregacao;
+import java.util.Scanner;
+
+public class Escola {
+	
+	private String nome;
+	private Aluno[] alunos = new Aluno[4];
+	
+	Escola(String nome) {
+		this.nome = nome;
+	}
+	
+	public void registrarAlunos(Scanner sc) {
+		Aluno aluno = new Aluno();
+		for(int i = 0; i < alunos.length; i++) {
+			aluno.registrarAluno(sc);
+			alunos[i] = aluno;
+		}
+	}
+	
+	public void mostrarDados() {
+		System.out.println("--- Escola ---");
+		for(Aluno aluno : alunos) {
+			aluno.mostrarDadosAluno();
+		}
+	}
+	
+}

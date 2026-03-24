@@ -1,0 +1,27 @@
+package associacao;
+
+public class Curso {
+	
+	private String nome;
+	private int cargaHoraria;
+	private Aluno aluno;
+	
+	Curso(){
+		
+	}
+	
+	Curso(String nome, int cargaHoraria, Aluno aluno){
+		this.nome = nome;
+		this.cargaHoraria = cargaHoraria;
+		this.aluno = aluno;
+	}
+	
+	public void mostrarDados() {
+		System.out.println("--- Dados do aluno ---");
+		System.out.println("Nome do aluno: " + aluno.getNome());
+		System.out.println("Matrícula do aluno: " + aluno.getMatricula());
+		System.out.println("Nome do curso: " + nome);
+		System.out.println("Carga horaria: " + cargaHoraria);
+	}
+	
+}

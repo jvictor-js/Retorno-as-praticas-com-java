@@ -1,0 +1,17 @@
+package questao1;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		LojaShopping loja1 = new LojaShopping();
+		
+		loja1.registra_abertura_dia();
+		loja1.cadastrarLoja(sc);
+		loja1.mostrarDados();
+		
+	}
+
+}

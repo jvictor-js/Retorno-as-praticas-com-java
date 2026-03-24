@@ -1,0 +1,8 @@
+package questao5;
+
+public class Dinheiro implements Pagamento{
+	@Override
+	public void pagar(double valor) {
+		System.out.println("Pagando com dinheiro...");
+	}
+}

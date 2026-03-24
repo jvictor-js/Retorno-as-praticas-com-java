@@ -1,0 +1,23 @@
+package associacao;
+
+public class Aluno {
+	
+	private String nome;
+	private String matricula;
+	private Professor profFavorito;
+	
+	Aluno(String nome, String matricula, Professor profFavorito){
+		this.nome = nome;
+		this.matricula = matricula;
+		this.profFavorito = profFavorito;
+	}
+	
+	public void mostraDados() {
+		System.out.println("--- Dados do aluno ---");
+		System.out.println("Nome: " + nome);
+		System.out.println("Matrícula: " + matricula);
+		System.out.println("Professor favorito: " + profFavorito.getNome());
+		System.out.println("Disciplina do professor favorito: " + profFavorito.getDisciplina());
+	}
+	
+}

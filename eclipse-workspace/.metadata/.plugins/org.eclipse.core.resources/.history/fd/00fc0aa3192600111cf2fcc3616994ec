@@ -1,0 +1,15 @@
+package associacao;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Aluno aluno = new Aluno();
+		
+		
+		Curso c1 = new Curso("Ciência da Computação", 56, aluno);
+		
+		c1.mostrarDados();
+		
+	}
+
+}

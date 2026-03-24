@@ -1,0 +1,20 @@
+package associacao;
+import java.util.Scanner;
+
+public class MainLivro {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		Livro livro = new Livro();
+		
+		livro.registrarLivro(sc);
+		
+		Leitor leitor = new Leitor("João Victor");
+		
+		leitor.livrosLidos(sc);
+
+	}
+
+}

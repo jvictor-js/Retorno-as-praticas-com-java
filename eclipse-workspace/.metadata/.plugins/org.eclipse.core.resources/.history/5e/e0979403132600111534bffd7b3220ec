@@ -1,0 +1,21 @@
+package questao2;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Veiculo bicicleta = new Bicicleta();
+		Veiculo automovel = new Automovel();
+		
+		System.out.println(bicicleta.acelerar(78));
+		bicicleta.parar();
+		
+		System.out.println(automovel.acelerar(101));
+		automovel.parar();
+		automovel.
+		
+		
+
+	}
+
+}

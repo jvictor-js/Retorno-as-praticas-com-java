@@ -1,0 +1,14 @@
+package questao3;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Conta c1 = new ContaEspecial("João", "Cheque especial", 700);
+		Conta c2 = new ContaPadrao("Pedro", "Poupança", 600);
+		
+		c1.sacar(67);
+		c2.depositar(67);
+
+	}
+
+}

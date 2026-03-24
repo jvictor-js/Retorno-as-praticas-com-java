@@ -1,0 +1,14 @@
+package questao3;
+
+public class Retangulo extends Quadrilatero{
+	
+	private int tamanhoBase;
+	private int altura;
+	
+	Retangulo(){};
+	
+	Retangulo(int tamamnhoBase, int altura){
+		this.tamanhoBase = tamamnhoBase;
+		this.altura = altura;
+	}
+}

@@ -1,0 +1,13 @@
+package maonamassa;
+
+public class MainCarro {
+
+	public static void main(String[] args) {
+		
+		Carro fusca = new Carro("Fiat", "Ducato", 2004);
+
+		fusca.exibirInfo();
+		
+	}
+
+}

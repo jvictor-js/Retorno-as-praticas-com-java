@@ -1,0 +1,18 @@
+package aula36;
+
+public class MainContato {
+
+	public static void main(String[] args) {
+		Contato contato = new Contato();
+		
+		contato.setNome("Jv");
+		contato.setEndereco("oahfoiefoiefihio");
+		contato.setTelefone("58698647967");
+		
+		System.out.println(contato.getNome());
+		System.out.println(contato.getEndereco());
+		System.out.println(contato.getTelefone());
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package questao3;
+
+public class ContaPadrao extends Conta{
+	
+	ContaPadrao(){}
+	
+	ContaPadrao(String nomeTitular, String tipoConta, double saldo){
+		super(nomeTitular, tipoConta, saldo);
+	}
+	
+	@Override
+	public void sacar(double deposito) {
+		if (deposito <= 0 ) {
+			System.out.println("Depósito inválido.");
+		} else {
+			saldo += deposito;
+			System.out.println("Saldo atual: " + (saldo + (deposito/10)));
+		}
+	}
+	
+}

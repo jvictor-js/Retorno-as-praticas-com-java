@@ -1,0 +1,24 @@
+package questao2;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Pessoa pessoa = new Pessoa("João", "14577657675");
+		Pessoa cliente = new Cliente("José", "5664754757", 14);
+		Cliente cliente2 = new Cliente("José", "5664754757", 14);
+		Pessoa funcionario = new Funcionario("Pedro", "45747474", "90568954689", 1500);
+		Funcionario funcionario2 = new Funcionario("Pedro", "45747474", "90568954689", 1500);
+		Pessoa gerente = new Gerente("Júlio", "5464664", "675757", 2800, 45);
+		Gerente gerente2 = new Gerente("Júlio", "5464664", "675757", 2800, 45);
+		
+		pessoa.mostraDados();
+		cliente.mostraDados("--- Cliente ---");
+		cliente2.mostraDados("--- Cliente ---");
+		funcionario.mostraDados("--- Funcionario ---");
+		funcionario2.mostraDados("--- Funcionario ---");
+		gerente.mostraDados("--- Gerente ---");
+		gerente2.mostraDados("--- Gerente ---");
+		
+	}
+
+}
